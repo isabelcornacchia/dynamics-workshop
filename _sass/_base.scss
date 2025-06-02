@@ -174,13 +174,6 @@ aside {
 // }
 
 .list-container-schedule {
-    // display: flex;
-    // justify-content: center;
-    // align-items: flex-start;
-    // gap: 40px;
-    // margin: 0 auto;
-    // flex-wrap: wrap;
-    // max-width: 1000px;
 
     display: flex;
     justify-content: center;
@@ -198,36 +191,21 @@ aside {
         text-align: center;
         margin-bottom: 20px;
         }
-  
-    //   ul {
-    //     list-style: none;
-    //     font-size: 18px;
-    //     padding: 0;
+        
         ul {
             flex: 0 0 auto; // shrink to fit content instead of stretching
-            max-width: 360px; // try 320–380px to tighten the column
+            max-width: 320px; // try 320–380px to tighten the column
             list-style: none;
             padding: 0;
             margin: 0 auto;
     
             li {
             margin-bottom: 10px;
-            // li {
-                // display: grid;
-                // grid-template-columns: auto auto;
-                // gap: 12px;
-                // font-size: 18px;
-                // line-height: 1.8;
-                // text-align: left;
     
             .time-event-row {
-                // display: grid;
-                // grid-template-columns: 140px auto; // Fixed width for time, flexible for event
-                // column-gap: 10px; // Adjust spacing between time and event
-                // align-items: center;
                 display: grid;
                 grid-template-columns: auto auto;
-                gap: 12px;
+                // gap: 12px;
                 font-size: 18px;
                 line-height: 1.8;
                 text-align: left;
@@ -241,7 +219,7 @@ aside {
     
             .event {
                 // flex-grow: 1;
-                // text-align: left;
+                text-align: left;
                 white-space: nowrap;
             }
             }
