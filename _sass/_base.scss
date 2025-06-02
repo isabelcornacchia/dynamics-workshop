@@ -74,7 +74,7 @@ aside {
     margin: 0 auto; /* Center the container itself */
     flex-wrap: wrap;  /* allow wrap on smaller screens */
     // max-width: 100%; /* Ensure it doesn't exceed the container width */
-    max-width: 600px; /* limit container width for better alignment */
+    max-width: 700px; /* limit container width for better alignment */
 }
 
 .list-container ul {
@@ -82,7 +82,7 @@ aside {
     flex: 0 0 auto; /* Don't stretch the lists */
     text-align: left; /* Align text to the left */
     font-size: 20px; // Adjust font size
-    line-height: 3; // Adjust line spacing
+    line-height: 1.5; // Adjust line spacing
 }
 
 // Navigation
@@ -177,9 +177,12 @@ header {
     text-align: center;
     color: white;
     .header-content {
-        position: relative;
-        text-align: center;
-        padding: 100px 15px 100px;
+        // position: relative;
+        // text-align: center;
+        // padding: 100px 15px 100px;
+        position: absolute;
+        top: 55%; /* Push content lower by increasing the percentage */
+        transform: translateY(-50%);
         width: 100%;
         .header-content-inner {
             h1 {
@@ -202,7 +205,7 @@ header {
     }
     @media (min-width: 768px) {
         // Use a fixed height for larger screens - full viewport height
-        min-height: 70%;
+        min-height: 60%;
         .header-content {
             position: absolute;
             top: 50%;
