@@ -177,12 +177,9 @@ header {
     text-align: center;
     color: white;
     .header-content {
-        // position: relative;
-        // text-align: center;
-        // padding: 100px 15px 100px;
-        position: absolute;
-        top: 55%; /* Push content lower by increasing the percentage */
-        transform: translateY(-50%);
+        position: relative;
+        text-align: center;
+        padding: 100px 15px 100px;
         width: 100%;
         .header-content-inner {
             h1 {
@@ -208,7 +205,7 @@ header {
         min-height: 60%;
         .header-content {
             position: absolute;
-            top: 50%;
+            top: 60%;
             -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
