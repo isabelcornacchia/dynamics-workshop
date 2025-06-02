@@ -67,38 +67,70 @@ aside {
     padding: 0;
 }
 
+// .list-container {
+//     display: flex; /* Use flexbox to align lists side by side */
+//     justify-content: center; /* Center the lists horizontally */
+//     gap: 50px; /* Add space between the lists */
+//     margin: 0 auto; /* Center the container itself */
+//     flex-wrap: wrap;  /* allow wrap on smaller screens */
+//     // max-width: 100%; /* Ensure it doesn't exceed the container width */
+//     max-width: 760px; /* limit container width for better alignment */
+//     @include sans-serif-font;
+
+//     @media (max-width: 767px) {
+//         .list-container {
+//             flex-direction: column; /* Stack lists vertically */
+//             align-items: center; /* Center the lists */
+//             gap: 10px; /* Reduce gap between lists */
+//         }
+//     }
+// }
+
+// .list-container ul {
+//     // flex: 1; /* Make both lists take equal width */
+//     flex: 0 0 45%; /* Don't stretch or shrink the lists */
+//     text-align: left; /* Align text to the left */
+//     font-size: 20px; // Adjust font size
+//     line-height: 2; // Adjust line spacing
+
+//     @media (max-width: 767px) {
+//         .list-container ul {
+//             width: 100%; /* Ensure lists stack properly */
+//         }
+//     }
+// }
+
 .list-container {
-    display: flex; /* Use flexbox to align lists side by side */
-    justify-content: center; /* Center the lists horizontally */
-    gap: 50px; /* Add space between the lists */
-    margin: 0 auto; /* Center the container itself */
-    flex-wrap: wrap;  /* allow wrap on smaller screens */
-    // max-width: 100%; /* Ensure it doesn't exceed the container width */
-    max-width: 760px; /* limit container width for better alignment */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; // ensures vertical alignment from top
+    gap: 50px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    max-width: 760px;
     @include sans-serif-font;
-
-    @media (max-width: 767px) {
-        .list-container {
-            flex-direction: column; /* Stack lists vertically */
-            align-items: center; /* Center the lists */
-            gap: 10px; /* Reduce gap between lists */
-        }
+  
+    ul {
+      flex: 0 0 45%;
+      text-align: left;
+      font-size: 20px;
+      line-height: 2;
+      margin: 0;
+      padding: 0;
+      list-style-position: inside;
     }
-}
-
-.list-container ul {
-    // flex: 1; /* Make both lists take equal width */
-    flex: 0 0 45%; /* Don't stretch or shrink the lists */
-    text-align: left; /* Align text to the left */
-    font-size: 20px; // Adjust font size
-    line-height: 2; // Adjust line spacing
-
+  
     @media (max-width: 767px) {
-        .list-container ul {
-            width: 100%; /* Ensure lists stack properly */
-        }
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  
+      ul {
+        flex: 1 0 100%;
+        text-align: center; // optional: better look on mobile
+      }
     }
-}
+  }
 
 // Navigation
 
