@@ -104,20 +104,20 @@ aside {
     display: flex;
     justify-content: center;
     align-items: flex-start; // ensures vertical alignment from top
-    gap: 80px;
+    gap: 70px;
     margin: 0 auto;
     flex-wrap: wrap;
-    max-width: 760px;
+    max-width: 800px;
     @include sans-serif-font;
   
     ul {
-      flex: 0 0 45%;
+    //   flex: 0 0 45%;
       text-align: left;
       font-size: 20px;
       line-height: 2;
       margin: 0;
       padding: 0;
-      list-style-position: inside;
+      width: 300px;
     }
   
     @media (max-width: 767px) {
@@ -127,7 +127,7 @@ aside {
   
       ul {
         flex: 1 0 100%;
-        text-align: left; // optional: better look on mobile
+        width: 100%;
       }
     }
 }
