@@ -76,6 +76,14 @@ aside {
     // max-width: 100%; /* Ensure it doesn't exceed the container width */
     max-width: 700px; /* limit container width for better alignment */
     @include sans-serif-font;
+
+    @media (max-width: 767px) {
+        .list-container {
+            flex-direction: column; /* Stack lists vertically */
+            align-items: center; /* Center the lists */
+            gap: 10px; /* Reduce gap between lists */
+        }
+    }
 }
 
 .list-container ul {
