@@ -201,7 +201,7 @@ header {
         }
     }
     @media (min-width: 768px) {
-        Use a fixed height for larger screens - full viewport height
+        // Use a fixed height for larger screens - full viewport height
         min-height: 70%;
         .header-content {
             position: absolute;
