@@ -198,16 +198,14 @@ aside {
           margin-bottom: 10px;
   
           .time-event-row {
-            display: flex;
-            justify-content: flex-start;
-            align-items: baseline;
-            gap: 15px; // space between time and event
-            font-size: 18px;
+            display: grid;
+            grid-template-columns: 140px auto; // Fixed width for time, flexible for event
+            column-gap: 15px; // Adjust spacing between time and event
+            align-items: start;
           }
   
           .time {
             font-weight: bold;
-            min-width: 140px;
             text-align: left;
           }
   
