@@ -105,7 +105,7 @@ aside {
     justify-content: center;
     align-items: flex-start; // ensures vertical alignment from top
     gap: 70px;
-    margin: 40 auto;
+    margin: 1200 auto;
     flex-wrap: wrap;
     max-width: 800px;
     @include sans-serif-font;
@@ -156,7 +156,7 @@ aside {
             max-width: 320px; // try 320–380px to tighten the column
             list-style: none;
             padding: 0;
-            margin: 25 auto;
+            margin: 40 auto;
     
             li {
             margin-bottom: 10px;
