@@ -176,26 +176,27 @@ header {
             p {
                 font-weight: 500;
                 color: rgba(white, .7);
-                font-size: 20px;
+                font-size: 24px;
                 margin-bottom: 50px;
             }
         }
     }
     @media (min-width: 768px) {
-        min-height: 100%;
+        // Use a fixed height for larger screens - full viewport height
+        // min-height: 100%;
         .header-content {
-            position: absolute;
-            top: 50%;
-            -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-            padding: 0 50px;
+        //     position: absolute;
+        //     top: 50%;
+        //     -webkit-transform: translateY(-50%);
+        //     -ms-transform: translateY(-50%);
+        //     transform: translateY(-50%);
+            padding: 40px 40px;
             .header-content-inner {
                 max-width: 1000px;
                 margin-left: auto;
                 margin-right: auto;
                 p {
-                    font-size: 18px;
+                    font-size: 24px;
                     max-width: 80%;
                     margin-left: auto;
                     margin-right: auto;
