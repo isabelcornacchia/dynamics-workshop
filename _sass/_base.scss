@@ -181,7 +181,6 @@ aside {
     margin: 0 auto;
     flex-wrap: wrap;
     max-width: 1000px;
-    text-align: left;
   
     .schedule-day {
       flex: 1 1 45%;
@@ -209,10 +208,12 @@ aside {
           .time {
             font-weight: bold;
             min-width: 140px;
+            text-align: left;
           }
   
           .event {
             flex-grow: 1;
+            text-align: left;
           }
         }
       }
