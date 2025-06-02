@@ -81,8 +81,8 @@ aside {
     // flex: 1; /* Make both lists take equal width */
     flex: 0 0 auto; /* Don't stretch the lists */
     text-align: left; /* Align text to the left */
-    // font-size: 18px; // Adjust font size
-    line-height: 2; // Adjust line spacing
+    font-size: 20px; // Adjust font size
+    line-height: 3; // Adjust line spacing
 }
 
 // Navigation
@@ -179,7 +179,7 @@ header {
     .header-content {
         position: relative;
         text-align: center;
-        padding: 100px 15px 60px;
+        padding: 100px 15px 100px;
         width: 100%;
         .header-content-inner {
             h1 {
@@ -194,22 +194,22 @@ header {
             p {
                 font-weight: 500;
                 color: rgba(white, .9);
-                font-size: 24px;
+                font-size: 18px;
                 margin-bottom: 50px;
                 @include serif-font;
             }
         }
     }
     @media (min-width: 768px) {
-        // Use a fixed height for larger screens - full viewport height
-        // min-height: 100%;
+        Use a fixed height for larger screens - full viewport height
+        min-height: 70%;
         .header-content {
-        //     position: absolute;
-        //     top: 50%;
-        //     -webkit-transform: translateY(-50%);
-        //     -ms-transform: translateY(-50%);
-        //     transform: translateY(-50%);
-            padding: 100px 60px;
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            // padding: 100px 60px;
             .header-content-inner {
                 max-width: 1000px;
                 margin-left: auto;
