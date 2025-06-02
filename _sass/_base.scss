@@ -132,46 +132,105 @@ aside {
     }
 }
 
+// .list-container-schedule {
+//     display: flex;
+//     justify-content: center;
+//     align-items: flex-start; // ensures vertical alignment from top
+//     gap: 30px;
+//     margin: 0 auto;
+//     flex-wrap: wrap;
+//     list-style-type: none; 
+//     // max-width: 800px;
+//     @include sans-serif-font;
+  
+//     ul {
+//       flex: 1 0 45%; // allows the list to take up to 45% of the container width
+//       text-align: left;
+//       font-size: 20px;
+//       line-height: 2;
+//       padding: 0;
+//         li {
+//             // gap: 30px;
+//             .time {
+//                 font-weight: bold;
+//                 min-width: 140px;
+//             }
+//             .event {
+//                 margin-left: 70px;
+//             }
+//             }
+//     }
+  
+//     @media (max-width: 767px) {
+//       flex-direction: column;
+//       align-items: center;
+//       gap: 10px;
+  
+//       ul {
+//         flex: 1 0 100%;
+//         width: 100%;
+//       }
+//     }
+// }
+
 .list-container-schedule {
     display: flex;
     justify-content: center;
-    align-items: flex-start; // ensures vertical alignment from top
-    gap: 30px;
+    align-items: flex-start;
+    gap: 40px;
     margin: 0 auto;
     flex-wrap: wrap;
-    list-style-type: none; 
-    // max-width: 800px;
-    @include sans-serif-font;
+    max-width: 1000px;
   
-    ul {
-      flex: 1 0 45%; // allows the list to take up to 45% of the container width
-      text-align: left;
-      font-size: 20px;
-      line-height: 2;
-      padding: 0;
-        li {
-            // gap: 30px;
-            .time {
-                font-weight: bold;
-                min-width: 140px;
-            }
-            .event {
-                margin-left: 70px;
-            }
-            }
-    }
-  
-    @media (max-width: 767px) {
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
+    .schedule-day {
+      flex: 1 1 45%;
+      
+      h3 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
   
       ul {
-        flex: 1 0 100%;
-        width: 100%;
+        list-style: none;
+        padding: 0;
+  
+        li {
+          margin-bottom: 10px;
+  
+          .time-event-row {
+            display: flex;
+            justify-content: flex-start;
+            gap: 30px; // space between time and event
+            font-size: 18px;
+          }
+  
+          .time {
+            font-weight: bold;
+            min-width: 140px;
+          }
+  
+          .event {
+            flex-grow: 1;
+          }
+        }
       }
     }
-}
+  }
+  
+  @media (max-width: 768px) {
+    .list-container-schedule {
+      flex-direction: column;
+      align-items: center;
+  
+      .schedule-day {
+        width: 100%;
+  
+        ul {
+          padding: 0 20px;
+        }
+      }
+    }
+  }
 
 // Navigation
 
