@@ -200,7 +200,8 @@ aside {
           .time-event-row {
             display: flex;
             justify-content: flex-start;
-            gap: 30px; // space between time and event
+            align-items: baseline;
+            gap: 15px; // space between time and event
             font-size: 18px;
           }
   
