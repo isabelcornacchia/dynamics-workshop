@@ -139,13 +139,13 @@ aside {
     line-height: 1.5;
     font-size: 14px;
     li {
-        gap: 30px;
+        // gap: 30px;
         .time {
             font-weight: bold;
             min-width: 140px;
           }
           .event {
-            flex: 1;
+            margin-left: 20px;
           }
     }
 }
