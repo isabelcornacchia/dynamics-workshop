@@ -67,6 +67,19 @@ aside {
     padding: 0;
 }
 
+.list-container {
+    display: flex; /* Use flexbox to align lists side by side */
+    justify-content: center; /* Center the lists horizontally */
+    gap: 20px; /* Add space between the lists */
+}
+
+.list-container ul {
+    flex: 1; /* Make both lists take equal width */
+    text-align: left; /* Align text to the left */
+    font-size: 20px; // Adjust font size
+    line-height: 1.5; // Adjust line spacing
+}
+
 // Navigation
 
 .navbar-default {
@@ -190,7 +203,7 @@ header {
         //     -webkit-transform: translateY(-50%);
         //     -ms-transform: translateY(-50%);
         //     transform: translateY(-50%);
-            padding: 40px 40px;
+            padding: 100px 60px;
             .header-content-inner {
                 max-width: 1000px;
                 margin-left: auto;
