@@ -132,21 +132,44 @@ aside {
     }
 }
 
-.list-no-bullets {
+.list-container-schedule {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; // ensures vertical alignment from top
+    gap: 30px;
+    margin: 0 auto;
+    flex-wrap: wrap;
     list-style-type: none; 
-    padding: 0;
-    margin: 0;
-    line-height: 1.5;
-    font-size: 14px;
-    li {
-        // gap: 30px;
-        .time {
-            font-weight: bold;
-            min-width: 140px;
-          }
-          .event {
-            margin-left: 20px;
-          }
+    // max-width: 800px;
+    @include sans-serif-font;
+  
+    ul {
+      flex: 1 0 45%; // allows the list to take up to 45% of the container width
+      text-align: left;
+      font-size: 20px;
+      line-height: 2;
+      padding: 0;
+        li {
+            // gap: 30px;
+            .time {
+                font-weight: bold;
+                min-width: 140px;
+            }
+            .event {
+                margin-left: 70px;
+            }
+            }
+    }
+  
+    @media (max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  
+      ul {
+        flex: 1 0 100%;
+        width: 100%;
+      }
     }
 }
 
