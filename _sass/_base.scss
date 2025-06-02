@@ -70,19 +70,20 @@ aside {
 .list-container {
     display: flex; /* Use flexbox to align lists side by side */
     justify-content: center; /* Center the lists horizontally */
-    gap: 30px; /* Add space between the lists */
+    gap: 50px; /* Add space between the lists */
     margin: 0 auto; /* Center the container itself */
     flex-wrap: wrap;  /* allow wrap on smaller screens */
     // max-width: 100%; /* Ensure it doesn't exceed the container width */
     max-width: 700px; /* limit container width for better alignment */
+    @include sans-serif-font;
 }
 
 .list-container ul {
     // flex: 1; /* Make both lists take equal width */
     flex: 0 0 auto; /* Don't stretch the lists */
     text-align: left; /* Align text to the left */
-    font-size: 20px; // Adjust font size
-    line-height: 1.5; // Adjust line spacing
+    font-size: 18px; // Adjust font size
+    line-height: 2; // Adjust line spacing
 }
 
 // Navigation
