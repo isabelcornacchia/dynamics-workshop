@@ -174,48 +174,78 @@ aside {
 // }
 
 .list-container-schedule {
+    // display: flex;
+    // justify-content: center;
+    // align-items: flex-start;
+    // gap: 40px;
+    // margin: 0 auto;
+    // flex-wrap: wrap;
+    // max-width: 1000px;
+
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 40px;
+    gap: 40px; // reduce or increase depending on spacing needs
     margin: 0 auto;
     flex-wrap: wrap;
-    max-width: 1000px;
+    max-width: 900px; // important to control how wide the whole block can go
+    @include sans-serif-font;
   
     .schedule-day {
-      flex: 1 1 45%;
-      
-      h3 {
+        flex: 1 1 45%;
+        
+        h3 {
         text-align: center;
         margin-bottom: 20px;
-      }
-  
-      ul {
-        list-style: none;
-        font-size: 18px;
-        padding: 0;
-  
-        li {
-          margin-bottom: 10px;
-  
-          .time-event-row {
-            display: grid;
-            grid-template-columns: 140px auto; // Fixed width for time, flexible for event
-            column-gap: 10px; // Adjust spacing between time and event
-            align-items: center;
-          }
-  
-          .time {
-            font-weight: bold;
-            text-align: left;
-          }
-  
-          .event {
-            flex-grow: 1;
-            text-align: left;
-          }
         }
-      }
+  
+    //   ul {
+    //     list-style: none;
+    //     font-size: 18px;
+    //     padding: 0;
+        ul {
+            flex: 0 0 auto; // shrink to fit content instead of stretching
+            max-width: 360px; // try 320–380px to tighten the column
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+    
+            li {
+            margin-bottom: 10px;
+            // li {
+                // display: grid;
+                // grid-template-columns: auto auto;
+                // gap: 12px;
+                // font-size: 18px;
+                // line-height: 1.8;
+                // text-align: left;
+    
+            .time-event-row {
+                // display: grid;
+                // grid-template-columns: 140px auto; // Fixed width for time, flexible for event
+                // column-gap: 10px; // Adjust spacing between time and event
+                // align-items: center;
+                display: grid;
+                grid-template-columns: auto auto;
+                gap: 12px;
+                font-size: 18px;
+                line-height: 1.8;
+                text-align: left;
+            }
+    
+            .time {
+                font-weight: bold;
+                // text-align: left;
+                white-space: nowrap;
+            }
+    
+            .event {
+                // flex-grow: 1;
+                // text-align: left;
+                white-space: nowrap;
+            }
+            }
+        }
     }
   }
   
