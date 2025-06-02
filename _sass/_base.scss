@@ -105,7 +105,7 @@ aside {
     justify-content: center;
     align-items: flex-start; // ensures vertical alignment from top
     gap: 70px;
-    margin: 0 auto;
+    margin: 10 auto;
     flex-wrap: wrap;
     max-width: 800px;
     @include sans-serif-font;
@@ -132,47 +132,6 @@ aside {
     }
 }
 
-// .list-container-schedule {
-//     display: flex;
-//     justify-content: center;
-//     align-items: flex-start; // ensures vertical alignment from top
-//     gap: 30px;
-//     margin: 0 auto;
-//     flex-wrap: wrap;
-//     list-style-type: none; 
-//     // max-width: 800px;
-//     @include sans-serif-font;
-  
-//     ul {
-//       flex: 1 0 45%; // allows the list to take up to 45% of the container width
-//       text-align: left;
-//       font-size: 20px;
-//       line-height: 2;
-//       padding: 0;
-//         li {
-//             // gap: 30px;
-//             .time {
-//                 font-weight: bold;
-//                 min-width: 140px;
-//             }
-//             .event {
-//                 margin-left: 70px;
-//             }
-//             }
-//     }
-  
-//     @media (max-width: 767px) {
-//       flex-direction: column;
-//       align-items: center;
-//       gap: 10px;
-  
-//       ul {
-//         flex: 1 0 100%;
-//         width: 100%;
-//       }
-//     }
-// }
-
 .list-container-schedule {
 
     display: flex;
@@ -197,7 +156,7 @@ aside {
             max-width: 320px; // try 320–380px to tighten the column
             list-style: none;
             padding: 0;
-            margin: 0 auto;
+            margin: 10 auto;
     
             li {
             margin-bottom: 10px;
@@ -207,7 +166,7 @@ aside {
                 grid-template-columns: 150px auto;
                 // gap: 12px;
                 font-size: 18px;
-                line-height: 1.3;
+                line-height: 4;
                 text-align: left;
             }
     
