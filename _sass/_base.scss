@@ -104,7 +104,7 @@ aside {
     display: flex;
     justify-content: center;
     align-items: flex-start; // ensures vertical alignment from top
-    gap: 50px;
+    gap: 80px;
     margin: 0 auto;
     flex-wrap: wrap;
     max-width: 760px;
@@ -138,6 +138,16 @@ aside {
     margin: 0;
     line-height: 1.5;
     font-size: 14px;
+    li {
+        .time {
+            font-weight: bold;
+            min-width: 140px;
+          }
+    
+          .event {
+            flex: 1;
+          }
+    }
 }
 
 // Navigation
