@@ -115,7 +115,7 @@ aside {
       text-align: left;
       font-size: 20px;
       line-height: 2;
-      padding-left: 20px;
+      padding-left: 45px;
     }
   
     @media (max-width: 767px) {
@@ -153,7 +153,7 @@ aside {
             flex: 0 0 auto; // shrink to fit content instead of stretching
             max-width: 320px; // try 320–380px to tighten the column
             list-style: none;
-            padding: 15px;
+            padding: 20px;
             margin: 40 auto;
     
             li {
