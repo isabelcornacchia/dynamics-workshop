@@ -36,6 +36,15 @@ h6 {
     @include sans-serif-font;
 }
 
+.abstract-row{
+    @include sans-serif-font;
+    h4{
+        line-height: 1.7;
+    }
+    padding-bottom: 4em;
+
+}
+
 p {
     font-size: 16px;
     line-height: 1.5;
@@ -353,6 +362,7 @@ header {
 
 .accommodation-row {
   // Default: center everything (small/medium screens)
+  padding-top: 2em;
   text-align: center;
 
   .acc-text-col,
